@@ -1,4 +1,4 @@
-# Deep-PPM: A Deep Neural Framework for Predicting Point-of-Interest on Instagram Data
+# DeepPIM: Deep Neural Point-of-Interest Imputation Model
 A point-of-interest (POI) is a specific location in which someone is interested. 
 Users on Instagram, a mobile-based social network, share their experiences with text and photos, and link POIs to their posts.
 POIs can be utilized to understand user preferences and behavior. 
@@ -15,7 +15,7 @@ The experimental results show that our model significantly outperforms the exist
 <p align="center">
 <img src="/figures/model_description5.png" width="400px" height="auto">
 </p>
-We want the user feature to capture a user’s POI preferences. We associate each user in the dataset with a real-valued embedding vector. A <b>user embedding matrix E</b> consists of the user embedding vector. We assume that certain objects will frequently appear in certain POIs. In doing so, we used the CNN model, which has been extensively studied in computer vision for effective visual feature extraction, as our <b>visual CNN layer</b>. We use all the layers of <a href="https://arxiv.org/pdf/1409.1556.pdf">VGGNet</a> except the softmax layer for our visual CNN layer. We want the textual feature to capture the textual context of a post. we use a <b>textual CNN layer</b> similar to the one presented in the work by <a href="http://www.aclweb.org/anthology/D14-1181">Kim et al.</a>.
+DeepPIM consists of two DNN layers, textual RNN and visual CNN layers, and two latent feature matrices for user and time embedding.
 
 ## Data set
 Data set is available at [here](https://s3.amazonaws.com/poiprediction/instagram.tar.gz). The data set includes "train.txt", "validation.txt", "test.txt", and "visual_feature.npz". The "train.txt"  "validation.txt" "test.txt" files include the training, validation, and tesing data respectively. The data is represented in the following format:
