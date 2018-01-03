@@ -13,7 +13,7 @@ The experimental results show that our model significantly outperforms the exist
 
 ## Model description
 <p align="center">
-<img src="/figures/model_description5.png" width="400px" height="auto">
+<img src="/figures/model_description.png" width="400px" height="auto">
 </p>
 DeepPIM consists of two DNN layers, textual RNN and visual CNN layers, and two latent feature matrices for user and time embedding.
 
